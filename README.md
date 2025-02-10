@@ -7,19 +7,19 @@ to edit this file, instead edit its template at: ./scripts/templates/README.md.j
 
 ## Containers
 
-_An opinionated collection of container images_
+_An opinionated collection of container images_ for my home.
 
 </div>
 
 <div align="center">
 
-![GitHub Repo stars](https://img.shields.io/github/stars/onedr0p/containers?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/onedr0p/containers?style=for-the-badge)
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/onedr0p/containers/release-scheduled.yaml?style=for-the-badge&label=Scheduled%20Release)
+![GitHub Repo stars](https://img.shields.io/github/stars/phekno/containers?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/phekno/containers?style=for-the-badge)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/phekno/containers/release-scheduled.yaml?style=for-the-badge&label=Scheduled%20Release)
 
 </div>
 
-Welcome to my container images, if looking for a container start by [browsing the GitHub Packages page for this repo's packages](https://github.com/onedr0p?tab=packages&repo_name=containers).
+Welcome to my container images, if looking for a container start by [browsing the GitHub Packages page for this repo's packages](https://github.com/phekno?tab=packages&repo_name=containers).
 
 ## Mission statement
 
@@ -35,10 +35,10 @@ We do take a similar approach but instead of appending a `-ls69` or `-r420` pref
 
 | Container                                          | Immutable |
 |----------------------------------------------------|-----------|
-| `ghcr.io/onedr0p/sonarr:rolling`                   | ❌         |
-| `ghcr.io/onedr0p/sonarr:3.0.8.1507`                | ❌         |
-| `ghcr.io/onedr0p/sonarr:rolling@sha256:8053...`    | ✅         |
-| `ghcr.io/onedr0p/sonarr:3.0.8.1507@sha256:8053...` | ✅         |
+| `ghcr.io/phekno/sonarr:rolling`                   | ❌         |
+| `ghcr.io/phekno/sonarr:3.0.8.1507`                | ❌         |
+| `ghcr.io/phekno/sonarr:rolling@sha256:8053...`    | ✅         |
+| `ghcr.io/phekno/sonarr:3.0.8.1507@sha256:8053...` | ✅         |
 
 _If pinning an image to the sha256 digest, tools like [Renovate](https://github.com/renovatebot/renovate) support updating the container on a digest or application version change._
 
@@ -55,7 +55,7 @@ networks:
     external: true
 services:
   sonarr:
-    image: ghcr.io/onedr0p/sonarr:3.0.8.1507
+    image: ghcr.io/phekno/sonarr:3.0.8.1507
     container_name: sonarr
     user: 65534:65534
     # ...
@@ -105,26 +105,22 @@ For applications that need to have persistent configuration data the config volu
 
 Each Image will be built with a `rolling` tag, along with tags specific to it's version. Available Images Below
 
-Container | Channel | Image
---- | --- | ---
-[actions-runner](https://github.com/onedr0p/containers/pkgs/container/actions-runner) | stable | ghcr.io/onedr0p/actions-runner
-[bazarr](https://github.com/onedr0p/containers/pkgs/container/bazarr) | stable | ghcr.io/onedr0p/bazarr
-[home-assistant](https://github.com/onedr0p/containers/pkgs/container/home-assistant) | stable | ghcr.io/onedr0p/home-assistant
-[jbops](https://github.com/onedr0p/containers/pkgs/container/jbops) | stable | ghcr.io/onedr0p/jbops
-[plex](https://github.com/onedr0p/containers/pkgs/container/plex) | stable | ghcr.io/onedr0p/plex
-[postgres-init](https://github.com/onedr0p/containers/pkgs/container/postgres-init) | stable | ghcr.io/onedr0p/postgres-init
-[prowlarr](https://github.com/onedr0p/containers/pkgs/container/prowlarr) | master | ghcr.io/onedr0p/prowlarr
-[prowlarr-develop](https://github.com/onedr0p/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/onedr0p/prowlarr-develop
-[prowlarr-nightly](https://github.com/onedr0p/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/onedr0p/prowlarr-nightly
-[qbittorrent](https://github.com/onedr0p/containers/pkgs/container/qbittorrent) | stable | ghcr.io/onedr0p/qbittorrent
-[radarr](https://github.com/onedr0p/containers/pkgs/container/radarr) | master | ghcr.io/onedr0p/radarr
-[radarr-develop](https://github.com/onedr0p/containers/pkgs/container/radarr-develop) | develop | ghcr.io/onedr0p/radarr-develop
-[radarr-nightly](https://github.com/onedr0p/containers/pkgs/container/radarr-nightly) | nightly | ghcr.io/onedr0p/radarr-nightly
-[sabnzbd](https://github.com/onedr0p/containers/pkgs/container/sabnzbd) | stable | ghcr.io/onedr0p/sabnzbd
-[sonarr](https://github.com/onedr0p/containers/pkgs/container/sonarr) | main | ghcr.io/onedr0p/sonarr
-[sonarr-develop](https://github.com/onedr0p/containers/pkgs/container/sonarr-develop) | develop | ghcr.io/onedr0p/sonarr-develop
-[tautulli](https://github.com/onedr0p/containers/pkgs/container/tautulli) | master | ghcr.io/onedr0p/tautulli
-[volsync](https://github.com/onedr0p/containers/pkgs/container/volsync) | stable | ghcr.io/onedr0p/volsync
+| Container                                                                                | Channel | Image                           |
+|------------------------------------------------------------------------------------------|---------|---------------------------------|
+| [actions-runner](https://github.com/phekno/containers/pkgs/container/actions-runner)     | stable  | ghcr.io/phekno/actions-runner   |
+| [home-assistant](https://github.com/phekno/containers/pkgs/container/home-assistant)     | stable  | ghcr.io/phekno/home-assistant   |
+| [plex](https://github.com/phekno/containers/pkgs/container/plex)                         | stable  | ghcr.io/phekno/plex             |
+| [postgres-init](https://github.com/phekno/containers/pkgs/container/postgres-init)       | stable  | ghcr.io/phekno/postgres-init    |
+| [prowlarr](https://github.com/phekno/containers/pkgs/container/prowlarr)                 | master  | ghcr.io/phekno/prowlarr         |
+| [prowlarr-develop](https://github.com/phekno/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/phekno/prowlarr-develop |
+| [prowlarr-nightly](https://github.com/phekno/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/phekno/prowlarr-nightly |
+| [radarr](https://github.com/phekno/containers/pkgs/container/radarr)                     | master  | ghcr.io/phekno/radarr           |
+| [radarr-develop](https://github.com/phekno/containers/pkgs/container/radarr-develop)     | develop | ghcr.io/phekno/radarr-develop   |
+| [radarr-nightly](https://github.com/phekno/containers/pkgs/container/radarr-nightly)     | nightly | ghcr.io/phekno/radarr-nightly   |
+| [sabnzbd](https://github.com/phekno/containers/pkgs/container/sabnzbd)                   | stable  | ghcr.io/phekno/sabnzbd          |
+| [sonarr](https://github.com/phekno/containers/pkgs/container/sonarr)                     | main    | ghcr.io/phekno/sonarr           |
+| [sonarr-develop](https://github.com/phekno/containers/pkgs/container/sonarr-develop)     | develop | ghcr.io/phekno/sonarr-develop   |
+| [volsync](https://github.com/phekno/containers/pkgs/container/volsync)                   | stable  | ghcr.io/phekno/volsync          |
 
 
 ## Deprecations
@@ -139,5 +135,7 @@ Containers here can be **deprecated** at any point, this could be for any reason
 **Note**: Deprecated containers will remained published to this repo for 6 months after which they will be pruned.
 
 ## Credits
+
+This repo (if you haven't figured it out already) was forked from [onedr0p's containers repo](https://github.com/onedr0p/containers).  Huge thanks to them for providing this sort of thing.
 
 A lot of inspiration and ideas are thanks to the hard work of [hotio.dev](https://hotio.dev/) and [linuxserver.io](https://www.linuxserver.io/) contributors.
