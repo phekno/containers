@@ -7,7 +7,7 @@ to edit this file, instead edit its template at: ./scripts/templates/README.md.j
 
 ## Containers
 
-_An opinionated collection of container images_ for my home.
+_An opinionated collection of container images_
 
 </div>
 
