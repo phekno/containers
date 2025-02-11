@@ -105,22 +105,22 @@ For applications that need to have persistent configuration data the config volu
 
 Each Image will be built with a `rolling` tag, along with tags specific to it's version. Available Images Below
 
-| Container                                                                                | Channel | Image                           |
-|------------------------------------------------------------------------------------------|---------|---------------------------------|
-| [actions-runner](https://github.com/phekno/containers/pkgs/container/actions-runner)     | stable  | ghcr.io/phekno/actions-runner   |
-| [home-assistant](https://github.com/phekno/containers/pkgs/container/home-assistant)     | stable  | ghcr.io/phekno/home-assistant   |
-| [plex](https://github.com/phekno/containers/pkgs/container/plex)                         | stable  | ghcr.io/phekno/plex             |
-| [postgres-init](https://github.com/phekno/containers/pkgs/container/postgres-init)       | stable  | ghcr.io/phekno/postgres-init    |
-| [prowlarr](https://github.com/phekno/containers/pkgs/container/prowlarr)                 | master  | ghcr.io/phekno/prowlarr         |
-| [prowlarr-develop](https://github.com/phekno/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/phekno/prowlarr-develop |
-| [prowlarr-nightly](https://github.com/phekno/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/phekno/prowlarr-nightly |
-| [radarr](https://github.com/phekno/containers/pkgs/container/radarr)                     | master  | ghcr.io/phekno/radarr           |
-| [radarr-develop](https://github.com/phekno/containers/pkgs/container/radarr-develop)     | develop | ghcr.io/phekno/radarr-develop   |
-| [radarr-nightly](https://github.com/phekno/containers/pkgs/container/radarr-nightly)     | nightly | ghcr.io/phekno/radarr-nightly   |
-| [sabnzbd](https://github.com/phekno/containers/pkgs/container/sabnzbd)                   | stable  | ghcr.io/phekno/sabnzbd          |
-| [sonarr](https://github.com/phekno/containers/pkgs/container/sonarr)                     | main    | ghcr.io/phekno/sonarr           |
-| [sonarr-develop](https://github.com/phekno/containers/pkgs/container/sonarr-develop)     | develop | ghcr.io/phekno/sonarr-develop   |
-| [volsync](https://github.com/phekno/containers/pkgs/container/volsync)                   | stable  | ghcr.io/phekno/volsync          |
+Container | Channel | Image
+--- | --- | ---
+[actions-runner](https://github.com/phekno/containers/pkgs/container/actions-runner) | stable | ghcr.io/phekno/actions-runner
+[home-assistant](https://github.com/phekno/containers/pkgs/container/home-assistant) | stable | ghcr.io/phekno/home-assistant
+[plex](https://github.com/phekno/containers/pkgs/container/plex) | stable | ghcr.io/phekno/plex
+[postgres-init](https://github.com/phekno/containers/pkgs/container/postgres-init) | stable | ghcr.io/phekno/postgres-init
+[prowlarr](https://github.com/phekno/containers/pkgs/container/prowlarr) | master | ghcr.io/phekno/prowlarr
+[prowlarr-develop](https://github.com/phekno/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/phekno/prowlarr-develop
+[prowlarr-nightly](https://github.com/phekno/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/phekno/prowlarr-nightly
+[radarr](https://github.com/phekno/containers/pkgs/container/radarr) | master | ghcr.io/phekno/radarr
+[radarr-develop](https://github.com/phekno/containers/pkgs/container/radarr-develop) | develop | ghcr.io/phekno/radarr-develop
+[radarr-nightly](https://github.com/phekno/containers/pkgs/container/radarr-nightly) | nightly | ghcr.io/phekno/radarr-nightly
+[sabnzbd](https://github.com/phekno/containers/pkgs/container/sabnzbd) | stable | ghcr.io/phekno/sabnzbd
+[sonarr](https://github.com/phekno/containers/pkgs/container/sonarr) | main | ghcr.io/phekno/sonarr
+[sonarr-develop](https://github.com/phekno/containers/pkgs/container/sonarr-develop) | develop | ghcr.io/phekno/sonarr-develop
+[volsync](https://github.com/phekno/containers/pkgs/container/volsync) | stable | ghcr.io/phekno/volsync
 
 
 ## Deprecations
@@ -135,7 +135,5 @@ Containers here can be **deprecated** at any point, this could be for any reason
 **Note**: Deprecated containers will remained published to this repo for 6 months after which they will be pruned.
 
 ## Credits
-
-This repo (if you haven't figured it out already) was forked from [onedr0p's containers repo](https://github.com/onedr0p/containers).  Huge thanks to them for providing this sort of thing.
 
 A lot of inspiration and ideas are thanks to the hard work of [hotio.dev](https://hotio.dev/) and [linuxserver.io](https://www.linuxserver.io/) contributors.
