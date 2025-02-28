@@ -120,6 +120,7 @@ Container | Channel | Image
 [sabnzbd](https://github.com/phekno/containers/pkgs/container/sabnzbd) | stable | ghcr.io/phekno/sabnzbd
 [sonarr](https://github.com/phekno/containers/pkgs/container/sonarr) | main | ghcr.io/phekno/sonarr
 [sonarr-develop](https://github.com/phekno/containers/pkgs/container/sonarr-develop) | develop | ghcr.io/phekno/sonarr-develop
+[tautulli](https://github.com/phekno/containers/pkgs/container/tautulli) | master | ghcr.io/phekno/tautulli
 [volsync](https://github.com/phekno/containers/pkgs/container/volsync) | stable | ghcr.io/phekno/volsync
 
 
